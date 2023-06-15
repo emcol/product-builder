@@ -1,0 +1,51 @@
+{
+  "extends": [
+    "airbnb",
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "jsx-a11y",
+    "prettier",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": [
+      "off"
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 260,
+        "tabWidth": 2,
+        "comments": 260,
+        "ignoreComments": false,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ]
+  }
+}
